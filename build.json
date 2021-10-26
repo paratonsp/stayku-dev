@@ -1,0 +1,22 @@
+{
+   "name": "Hotel",
+   "version": "1.0.0",
+   "dependencies": {
+
+   },
+   "settings": {
+      "unit_name":{
+         "singular": "room", 
+         "plural" : "rooms" 
+      },
+      "unit_type_name" :  {
+         "singular":"room type",
+         "plural": "room types"
+      },
+      "send_invoice_email_automatically" : false,
+      "display_tooltip" : false,
+      "is_total_balance_include_forecast" : false
+   }
+}
+  
+ 
