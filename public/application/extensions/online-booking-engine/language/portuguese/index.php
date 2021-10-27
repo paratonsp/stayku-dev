@@ -1,0 +1,55 @@
+<?php
+
+$lang['online-booking-engine']['Please select a date range of at least 1 night'] = 'Selecione um intervalo de datas de pelo menos 1 noite';
+$lang['online-booking-engine']['Your stay'] = 'Sua estadia';
+$lang['online-booking-engine']['Night'] = 'Noite';
+$lang['online-booking-engine']['Nights'] = 'Noites';
+$lang['online-booking-engine']['Close'] = 'Perto';
+$lang['online-booking-engine']['Check-in disabled'] = 'Check-in desativado';
+$lang['online-booking-engine']['Check-out disabled'] = 'Check-out desativado';
+$lang['online-booking-engine']['Sun'] = 'Dom';
+$lang['online-booking-engine']['Mon'] = 'Seg';
+$lang['online-booking-engine']['Tue'] = 'Ter';
+$lang['online-booking-engine']['Wed'] = 'Qua';
+$lang['online-booking-engine']['Thu'] = 'Qui';
+$lang['online-booking-engine']['Fri'] = 'Sex';
+$lang['online-booking-engine']['Sat'] = 'Sab';
+$lang['online-booking-engine']['Sunday'] = 'domingo';
+$lang['online-booking-engine']['Monday'] = 'segunda-feira';
+$lang['online-booking-engine']['Tuesday'] = 'terça-feira';
+$lang['online-booking-engine']['Wednesday'] = 'quarta-feira';
+$lang['online-booking-engine']['Thursday'] = 'quinta-feira';
+$lang['online-booking-engine']['Friday'] = 'Sexta-feira';
+$lang['online-booking-engine']['Saturday'] = 'sábado';
+$lang['online-booking-engine']['Jan'] = 'Jan';
+$lang['online-booking-engine']['Feb'] = 'Fev';
+$lang['online-booking-engine']['Mar'] = 'Mar';
+$lang['online-booking-engine']['Apr'] = 'Abr';
+$lang['online-booking-engine']['May'] = 'Poderia';
+$lang['online-booking-engine']['Jun'] = 'Junho';
+$lang['online-booking-engine']['Jul'] = 'Jul';
+$lang['online-booking-engine']['Aug'] = 'Agosto';
+$lang['online-booking-engine']['Sep'] = 'Set';
+$lang['online-booking-engine']['Oct'] = 'Out';
+$lang['online-booking-engine']['Nov'] = 'Nov';
+$lang['online-booking-engine']['Dec'] = 'Dez';
+$lang['online-booking-engine']['January'] = 'Janeiro';
+$lang['online-booking-engine']['February'] = 'fevereiro';
+$lang['online-booking-engine']['March'] = 'marcha';
+$lang['online-booking-engine']['April'] = 'abril';
+$lang['online-booking-engine']['Jun'] = 'junho';
+$lang['online-booking-engine']['July'] = 'julho';
+$lang['online-booking-engine']['August'] = 'agosto';
+$lang['online-booking-engine']['September'] = 'setembro';
+$lang['online-booking-engine']['October'] = 'Outubro';
+$lang['online-booking-engine']['November'] = 'novembro';
+$lang['online-booking-engine']['December'] = 'dezembro';
+$lang['online-booking-engine']['Date range should not be more than 1 night'] = 'O intervalo de datas não deve ser superior a 1 noite';
+$lang['online-booking-engine']['Date range should not be more than %d nights'] = 'O intervalo de datas não deve ser superior a% d noites';
+$lang['online-booking-engine']['Date range should not be less than 1 night'] = 'O intervalo de datas não deve ser inferior a 1 noite';
+$lang['online-booking-engine']['Date range should not be less than %d nights'] = 'O intervalo de datas não deve ser inferior a% d noites';
+$lang['online-booking-engine']['Please select a date range of at least %d nights'] = 'Selecione um intervalo de datas de pelo menos% d noites';
+$lang['online-booking-engine']['Please select a date range between %d and %d nights'] = 'Selecione um intervalo de datas entre% d e% d noites';
+$lang['online-booking-engine']['Please select a date range'] = 'Selecione um intervalo de datas';
+
+?>
