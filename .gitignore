@@ -8,4 +8,3 @@ composer.phar
 /*.sql
 .env
 /nbproject/private/
-/public/application/extensions/
