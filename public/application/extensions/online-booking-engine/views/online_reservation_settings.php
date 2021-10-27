@@ -48,13 +48,19 @@
 	  <div class="panel-body">
 	    <ul class="bullet-points">
 			<li>
-				<?php echo l('Create', true); ?> <a href="<?php echo base_url();?>settings/rates/rate_plans"><?php echo l('Rate Plans', true); ?></a>, <?php echo l('and set availability & rates.', true); ?>
+				<?php echo l('1. Allow rooms to be booked for free on', true); ?> <a href="<?php echo base_url();?>settings/company/feature_settings"><?php echo l('Feature Setting', true); ?>
 			</li>
 			<li>
-				<?php echo l('Update your property information in', true); ?> <a href="<?php echo base_url();?>settings/company/general"><?php echo l('Property Settings', true); ?></a>
+				<?php echo l('2. Create', true); ?> <a href="<?php echo base_url();?>settings/rates/rate_plans"><?php echo l('Rate Plans', true); ?></a>, <?php echo l('and set room charge to none, set availability & rates.', true); ?>
 			</li>
 			<li>
-				<?php echo l('Set the appropriate rooms in', true); ?> <a href="<?php echo base_url();?>settings/room_inventory/rooms"><?php echo l('Room Settings', true); ?></a> <?php echo l("to 'can be sold online'.", true); ?>
+				<?php echo l('3. Edit default room charge to none on', true); ?> <a href="<?php echo base_url();?>settings/room_inventory/room_types"><?php echo l('Room Type', true); ?>
+			</li>
+			<li>
+				<?php echo l('4. Update your property information in', true); ?> <a href="<?php echo base_url();?>settings/company/general"><?php echo l('Property Settings', true); ?></a>
+			</li>
+			<li>
+				<?php echo l('5. Set the appropriate rooms in', true); ?> <a href="<?php echo base_url();?>settings/room_inventory/rooms"><?php echo l('Room Settings', true); ?></a> <?php echo l("to 'can be sold online'.", true); ?>
 			</li>
 		</ul>
 	  </div>

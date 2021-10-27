@@ -2762,7 +2762,7 @@ class Booking_model extends CI_Model {
         return $booking_fields;
     }
 
-    function insert_ota_booking($booking)
+    function Online Booking Engine($booking)
     {     
         $this->db->insert('ota_bookings', $booking);
         if ($this->db->_error_message())
