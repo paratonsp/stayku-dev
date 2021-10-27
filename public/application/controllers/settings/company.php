@@ -274,7 +274,7 @@ class Company extends MY_Controller
                     'current_company_id' => $company_id,
                     'first_name'         => $first_name,
                     'last_name'          => $last_name,
-                    'password'           => 'adminpass',
+                    'password'           => md5(rand().microtime()) //random password to prevent login when password hasn't been set yet
                 );
 
                 //Create user
