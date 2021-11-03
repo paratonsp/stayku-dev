@@ -1395,7 +1395,7 @@ class Online_reservation extends MY_Controller
                         // add booking info into xml logs
                         $request_data['booking_data'] = $booking_data;
                         $request_data['booking_block_data'] = $booking_history;
-                        $request_data['card_data'] = $card_data_array;
+                        // $request_data['card_data'] = $card_data_array;
 
                         $request_data['total'] = $data['view_data']['total'];
                         $request_data['number-of-nights'] = $data['view_data']['number_of_nights'];

@@ -23,7 +23,7 @@
 			<div class="form-inline">
 				<div class="form-group">
 					<?php 
-						$first_day_of_this_month = date('Y-m-01', strtotime($date));
+						$first_day_of_this_month = date('Y-m-1', strtotime($date));
 						$today = strtotime($first_day_of_this_month);
 						$month_before_today = date ( 'Y-m-d' , strtotime ( '-1 month' , $today ) );
 						$month_after_today = date ( 'Y-m-d' , strtotime ( '+1 month' , $today ) );
