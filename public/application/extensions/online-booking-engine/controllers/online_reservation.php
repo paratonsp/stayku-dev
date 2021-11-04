@@ -1401,18 +1401,18 @@ class Online_reservation extends MY_Controller
                         $request_data['number-of-nights'] = $data['view_data']['number_of_nights'];
 
                         // date_default_timezone_set('America/Denver');
-                        $response = array(
-                            'ota_type' => 'booking_engine',
-                            'ota_booking_id' => $booking_id,
-                            'pms_booking_id' => $booking_id,
-                            'check_in_date' => $booking_history['check_in_date'],
-                            'check_out_date' => $booking_history['check_out_date'],
-                            'create_date_time' => date('Y-m-d H:i:s', time()),
-                            'booking_type' => 'new',
-                            'xml_out' => json_encode($request_data)
-                        );
+                        // $response = array(
+                        //     'ota_type' => 'booking_engine',
+                        //     'ota_booking_id' => $booking_id,
+                        //     'pms_booking_id' => $booking_id,
+                        //     'check_in_date' => $booking_history['check_in_date'],
+                        //     'check_out_date' => $booking_history['check_out_date'],
+                        //     'create_date_time' => date('Y-m-d H:i:s', time()),
+                        //     'booking_type' => 'new',
+                        //     'xml_out' => json_encode($request_data)
+                        // );
 
-                        $this->Booking_model->insert_ota_booking($response);
+                        // $this->Booking_model->insert_ota_booking($response);
                         
                     } catch (Exception $e) {
 
