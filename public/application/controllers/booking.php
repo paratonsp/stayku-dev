@@ -112,6 +112,7 @@ class Booking extends MY_Controller
     {
         $last_login_date = $this->session->userdata('last_login_date');
         $last_login_company = $this->session->userdata('last_login_company');
+        $this->Company_model->increment_selling_date_now($this->company_id);
         // Set last login date in company.
         if(
             (

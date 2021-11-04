@@ -179,6 +179,11 @@ class Company_model extends CI_Model {
 		$this->db->query($SQL);
 	}
 
+	function increment_selling_date_now($company_id) {
+		$SQL = "UPDATE company SET selling_date = NOW() WHERE company_id = '$company_id'";
+		$this->db->query($SQL);
+	}
+
 	// decrement selling_date by 1 (Called from night audit controller)
 	function decrement_selling_date_by_one($company_id) {
 		$SQL = "UPDATE company SET selling_date = DATE_SUB(selling_date, INTERVAL 1 DAY) WHERE company_id = '$company_id'";
