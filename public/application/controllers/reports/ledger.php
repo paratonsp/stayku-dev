@@ -52,7 +52,7 @@ class Ledger extends MY_Controller {
             $parts      = explode('-', $this->selling_date);
             $year       = $parts[0];
             $month      = $parts[1];
-            $start_date = date("Y-m-01");
+            $start_date = "$year-$month-01";
         }
 
         if ($end_date == '') {
@@ -310,7 +310,7 @@ class Ledger extends MY_Controller {
 	{
 		
 		if ($date == '') {
-			$date = date("Y-m-01");
+			$date = $this->selling_date;
 		}
         //get user's shift information
         $data['date'] = $date;
@@ -346,7 +346,7 @@ class Ledger extends MY_Controller {
         $date_range = array();
         if ($date == '')
         {
-            $date = date("Y-m-01");
+            $date = $this->selling_date;
             $data['date'] = $date;
         }
         else
@@ -392,7 +392,7 @@ class Ledger extends MY_Controller {
         $date_range = array();
         if ($date == '')
         {
-            $date = date("Y-m-01");
+            $date = $this->selling_date;
             $data['date'] = $date;
         }
         else
@@ -437,7 +437,7 @@ class Ledger extends MY_Controller {
     {
         if ($date == '') 
         {
-            $date = date("Y-m-01");
+            $date = $this->selling_date;
         }
         //get user's shift information
         $this->load->helper('timezone');
@@ -474,7 +474,7 @@ class Ledger extends MY_Controller {
     {
 
 		if ($date == '') {
-			$date = date("Y-m-01");
+			$date = $this->selling_date;
 		}
         //get user's shift information
         $data['date']   = $date;
@@ -497,7 +497,7 @@ class Ledger extends MY_Controller {
     function show_customer_report($date = null, $state = INHOUSE)
 	{
         //get user's shift information
-		$date = (isset($date))?$date:date("Y-m-01");
+		$date = (isset($date))?$date:$this->selling_date;
         $data['date'] = $date;
 
         
@@ -535,7 +535,7 @@ class Ledger extends MY_Controller {
         $date_range = array();
         if ($date == '')
         {
-            $date = date("Y-m-01");
+            $date = $this->selling_date;
             $data['date'] = $date;
         }
         else
@@ -607,7 +607,7 @@ class Ledger extends MY_Controller {
         $date_range = array();
         if ($date == '')
         {
-            $date = date("Y-m-01");
+            $date = $this->selling_date;
             $data['date'] = $date;
         }
         else
@@ -679,7 +679,7 @@ class Ledger extends MY_Controller {
     {        
         $this->load->helper('download');
         if ($date == '') {
-			$date = date("Y-m-01");
+			$date = $this->selling_date;
 		}
         //get user's shift information
         $data['date'] = $date;
