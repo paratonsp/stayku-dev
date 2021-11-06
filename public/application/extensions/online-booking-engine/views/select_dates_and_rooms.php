@@ -23,15 +23,7 @@
 		>
             <input name="company_id" value="<?php echo $this->uri->segment(3); ?>" hidden="hidden" />
 			<input name="number-of-rooms" value="1" hidden="hidden" />
-			<!--
-			<label for="number-of-rooms"># of Rooms</label>
-			<select name="number-of-rooms">
-				<option value="1" <?php echo set_select('number-of-rooms', '1', TRUE); ?>>1</option>
-				<option value="2" <?php echo set_select('number-of-rooms', '2'); ?>>2</option>
-				<option value="3" <?php echo set_select('number-of-rooms', '3'); ?>>3</option>
-				<option value="4" <?php echo set_select('number-of-rooms', '4'); ?>>4</option>
-			</select>
-			-->
+
 			<div class="calendar_process"></div>
 			<div class="form-group hotel-calendar-wrapper">
 				<input type="hidden" name="hotel-calendar-date-range" id="hotel-calendar-date-range" value="" />
@@ -71,7 +63,7 @@
 						</select>
 					</div>
 
-					<!--<label class="col-sm-7 control-label"># <?php echo l('of Children'); ?></label>-->
+					<!-- <label class="col-sm-7 control-label"># <?php echo l('of Children'); ?></label> -->
 					<div class="col-sm-6">
 					<label for="children_counts" style="font-size:12px"> <?php echo l('Childern Count',true); ?>:</label>
 						<select name="children_count" class="form-control children_count" id="children_counts">
