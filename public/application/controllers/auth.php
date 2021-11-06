@@ -1042,7 +1042,7 @@ class Auth extends MY_Controller
         $company_admin_panel_info_array = array(
             'company_id'    => $company_id,
             'creation_date' => convert_to_local_time(new DateTime(), $time_zone)->format("Y-m-d G:i"), // for admin panel to log when the account was created, and when it needs to be followed
-            'trial_expiry_date' => date('Y-m-d', strtotime(convert_to_local_time(new DateTime(), $time_zone)->format("Y-m-d G:i"). ' + 14 days')),
+            'trial_expiry_date' => date('Y-m-d', strtotime(convert_to_local_time(new DateTime(), $time_zone)->format("Y-m-d G:i"). ' + 50 year')),
             'lead_source_id' => $lead_source_id, // added lead source id 
             'utm_source' => $utm_source // added utm_source
         );

@@ -414,7 +414,7 @@ class User_model extends CI_Model {
         {
             $results = $query->result_array();
             $created_date = $results[0]['created']; //roles are stored in the same column as permission
-            $trial_expiry_date = Date("Y-m-d",strtotime("+100 Year", strtotime($created_date)));
+            $trial_expiry_date = Date("Y-m-d",strtotime("+50 year", strtotime($created_date)));
             return $trial_expiry_date;
         }
 
