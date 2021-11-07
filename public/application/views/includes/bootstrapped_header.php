@@ -8,7 +8,7 @@ $whitelabel_detail = $this->session->userdata('white_label_information');
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
-	<!-- <title><?php echo (isset($whitelabel_detail) && isset($whitelabel_detail['name'])) ? ucfirst($whitelabel_detail['name']) : $this->config->item('branding_name'); ?> - Hotel software made by hotelier</title> -->
+	<title>Admin Stayku</title>
     <title><?php echo isset($this->company_name) && $this->company_name ? ucfirst($this->company_name) : ((isset($whitelabel_detail) && isset($whitelabel_detail['name'])) ? ucfirst($whitelabel_detail['name']) : $this->config->item('branding_name')); ?></title>
 	
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/bootstrap.min.css"  />	

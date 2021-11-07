@@ -9,16 +9,14 @@ class="text-center"
 	style="  max-width: 400px;
     margin: auto;"
 >		
-		
-    <h2 class="form-signin-heading"><?php  if($whitelabel_detail){  echo ucfirst($whitelabel_detail['name']); }else{echo $this->config->item('branding_name');}?> Login</h2>
-	
+	<br>
+	<br>
+    <h2 class="form-signin-heading">Admin Login</h2>
+
+		<br>
+		<br>
 		<?php $email = '';
             $password = '';
-
-            if(auto_fill_credentials() && current_url() == 'https://demo.minical.io/auth/login'){
-	            $email = 'demo@minical.io';
-	            $password = '12345';
-        	} 
         ?>
 
 		<div class="form-group">
@@ -30,51 +28,18 @@ class="text-center"
 			<label for="inputPassword" class="sr-only">Password</label>
 			<input type="password" id="password" name="password" class="form-control" placeholder="Password" required value="<?php echo $password; ?>">
 		</div>
-		<!--
-		<div class="checkbox">
-			<input type="checkbox" name="remember" value="1" id="remember" style="margin:0;padding:0"  />			
-			<label for="remember">Remember me</label>	
-		</div>
-		-->
 
 		<div class="form-group">
 			<input class="btn btn-lg btn-primary btn-block" id="log-in-button" type="submit" name="submit" value="Log In" >
 		</div>
 
 
-		<?php echo anchor('/auth/forgot_password/', 'Forgot Password?'); ?>
-		<br/>
+		<!-- <?php echo anchor('/auth/forgot_password/', 'Forgot Password?'); ?> -->
 
-		<?php if(show_registration_link()) {
+		<!-- <?php if(show_registration_link()) {
 		 	echo anchor('/auth/register', "Don't have an account? Sign-up with us!"); 
-		} ?>
+		} ?> -->
 
-        
-        <br/>
-        <br/>
-        <div style="font-size: 13px;"> 
-            <?php echo "By logging in, you accept our "; ?>
-
-            <?php if(isset($whitelabel_detail['terms_of_service']) && $whitelabel_detail['terms_of_service']) { ?>
-		        <a href="<?php echo $whitelabel_detail['terms_of_service']; ?>" target="_blank">Terms of Use</a>
-		    <?php } else { ?>
-		        <a href="<?php echo base_url();?>auth/terms_of_service" target="_blank">Terms Of Use</a>
-		    <?php } ?>
-		    <?php echo " and " ?>
-
-		    <?php if(isset($whitelabel_detail['privacy_policy']) && $whitelabel_detail['privacy_policy']) { ?>
-		        <a href="<?php echo $whitelabel_detail['privacy_policy']; ?>" target="_blank">Privacy Policy</a>
-		    <?php } else { ?>
-		        <a href="<?php echo base_url();?>auth/privacy_policy" target="_blank">Privacy Policy</a>
-		    <?php } ?>
-
-        </div>
-	<!--
-	<a href="https://www.google.com/intl/en/chrome/browser/" style="text-decoration:none;">
-		<img src="../images/chrome-logo.gif" /><br/>
-		minical.io works the best with Google Chrome. <br/>Click here to download Google Chrome for free<br/>
-	</a>	
-	-->
 </form>
 </div>
 <div class="col-md-3"></div>
