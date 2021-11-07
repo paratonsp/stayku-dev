@@ -347,7 +347,7 @@ $my_companies = $this->Company_model->get_companies($this->user_id);
                 </div>
 
                 <ul class="ui-theme-settings">
-
+<!-- 
                     <?php $languages = get_enabled_languages();
                     $current_language = $this->session->userdata('language'); ?>
                     <li class='nav-link current_language <?=$this->session->userdata('user_role') == "is_housekeeping" ? "hidden" : "";?>'
@@ -372,7 +372,7 @@ $my_companies = $this->Company_model->get_companies($this->user_id);
                                 <?php endforeach;
                             endif; ?>
                         </ul>
-                    </li>
+                    </li> -->
 
 
                     <li class="dropdown d-inline-block">

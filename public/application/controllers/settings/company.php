@@ -333,7 +333,7 @@ class Company extends MY_Controller
         if($whitelabelinfo && isset($whitelabelinfo['name']) && $whitelabelinfo['name']){
             $data['partner_name'] = $whitelabelinfo['name'];
         } else {
-            $data['partner_name'] = 'Minical';
+            $data['partner_name'] = 'Pesoros';
         }
         $this->_send_email('register_employee', $employee_email, $data);
     }

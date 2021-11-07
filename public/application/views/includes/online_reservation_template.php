@@ -209,7 +209,7 @@ $files = get_asstes_files($this->module_assets_files, $this->router->fetch_modul
 	     $year= date("Y",$time);
 	     echo l('powered by', true);
          if(empty($whitelabelinfo) || (isset($whitelabelinfo['name']) && $whitelabelinfo['name'] == 'Minical')) {
-             echo " <a target='_blank' href='https://www.minical.io'>Minical</a>";
+             echo " Stayku.";
          }else {
              echo (!empty($whitelabelinfo['domain']) ? " <a target='_blank' href='https://".$whitelabelinfo['domain']."'>" : " <a href='#'>").$partner_name."</a>";
          }

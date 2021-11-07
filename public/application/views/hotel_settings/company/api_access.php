@@ -29,7 +29,7 @@
                                <?= $company_data['enable_api_access'] == 1 ? 'checked=checked' : ''; ?>/>
                         <span></span>
                     </label>
-                    <label for="enable_api_access"><b><?= l("Enable " . $company_data['partner_name'] . " API access", true); ?></b></label>
+                    <label for="enable_api_access"><b><?= l("Enable " . $company_data['partner_name'] . " API access", false); ?></b></label>
                 </div>
                 <div class="form-group features-div-padding  form-inline api-key">
                     <label for="api_key"><?= l("API Key", true); ?></label>
